@@ -1,0 +1,261 @@
+/*
+
+Theme Name: Maco Theme
+Author: Rajeev Choudhary
+Author URI: https://rajeevchoudhary.dev
+Version: 1.0;
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+/* background image css */
+
+body{
+    background: url("https://projectmuze.com/wp-content/uploads/2019/04/Art6-1.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.background-color-container{
+    height: auto;
+}
+
+/* header container */
+
+.header-container{
+    display: flex;
+    padding: 2em;
+    align-items: center;
+}
+
+.header-logo{
+    width: 9em;
+}
+
+.header-site-title{
+    color: #283a80;
+    font-size: 1.5em;
+}
+
+/* space-block */
+
+.space-block{
+    height: 2em;
+}
+
+/* contact container */
+
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: transparent;
+}
+
+.contact-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+
+.content-box-two{
+    margin: 2em;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: #74747433 6px 8px 10px 0px;
+}
+
+.content-text{
+    color: #283a80;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.call-button{
+    padding: 1em 2em;
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+    background-color: #FF813F;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.call-button:hover{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    color: white;
+    background-color: #283a80;
+}
+
+.or-text{
+    color: #bbbbbb;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: .6em;
+    font-weight: bolder;
+}
+
+.email-container a{
+    text-decoration: none;
+}
+
+.email-address{
+    color: #606060;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.email-address:hover{
+    text-decoration: underline;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* footer container */
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+    height: 200px;
+    padding: 35px;
+    align-items: flex-end;
+}
+
+.footer-text-container{
+    text-align: left;
+}
+
+.footer-text{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.footer-text-bg{
+    background-color: #283a80;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.footer-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-btn:hover .footer-icon{
+    color: #283a80;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.fa-facebook-f{
+    color: blue;
+}
+
+.fa-instagram{
+    background: -webkit-linear-gradient(#FF01A2, #FFBB00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-icon{
+    font-size: 1.5em;
+}
+
+
+/* Adding Media Queries Now */
+
+@media only screen and (max-width: 1380px) {
+    .contact-content-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) {
+
+    .content-container{
+        grid-template-columns: 1fr 2fr;
+    }
+
+}
+
+@media only screen and (max-width: 1070px) {
+
+    
+    .header-logo{
+        width: 7em;
+    }
+
+    .header-site-title{
+        font-size: 1em;
+    }
+    
+    .content-container{
+        grid-template-columns:1fr;
+    }
+
+
+    .contact-call-container, .or-text-container, .email-container{
+        margin: .6em;
+        }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+     
+    .header-logo{
+        width: 6em;
+    }
+
+    .content-box-two {
+        margin: .5em;
+    }
+    
+    .contact-call-container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .call-button{
+        width: 100%;
+    }
+
+    .footer-text {
+        font-size: 1em;
+    }
+
+}
